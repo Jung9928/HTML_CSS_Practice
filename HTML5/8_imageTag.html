@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 관련 태그</title>
+</head>
+<body>
+    <h1>이미지 관련 태그</h1>
+
+    <!-- ..을 사용하여 현재 디렉토리의 상위 디렉토리로 이동하여
+         resources 디렉토리로 이동한 것.
+         이 경우를, "상대경로"를 기준으로 찾아간다고 한다.
+    -->>
+    <img src="../resources/image/himo.jpg" alt="">
+    <p>
+        src 속성으로 이미지의 경로를 설정하여 화면에 이미지를 표시할 수 있다.
+        <br>
+        <b>절대 경로 : </b><br>
+            C:/, D:/ 와 같은 보조 기억장치 시작부터 <br>
+            해당 파일이 위치한 경로를 모두 서술하는 것<br>
+            ex) D:/수업자료/workspace/HTML5/resources/image/river1.PNG
+        <br>
+
+        <b>상대 경로 : </b><br>
+            현재 파일을 기준으로 다른 파일의 위치를 찾아가는 것 <br>
+            ./ or 파일명으로 시작 : 현재 파일과 같은 폴더 안의 위치에서 시작한다.<br>
+            ../ : 현재 파일이 위치한 폴더 바깥으로 나가서 찾는다. <br>
+            ex) <br>
+                '0_firstPage.html' : 같은 폴더 안에 있음. <br>
+                '../index.html' : 현재 폴더를 나가서 찾겠다! <br>
+                '../../../img.jpg' : 3번 나가서 img 이미지를 찾아라!
+    </p>
+    
+    <h3>alt 속성</h3>
+
+    <img src="../resources/image/superman.jpg" alt="슈퍼맨 사진입니다.">
+    <p>
+        사진의 경로가 잘못되었거나, 이미지가 훼손되었을 경우,
+        스크린 리더기(화면 낭독기)를 통해 사진을 표현하거나, 글자로
+        사진의 정보를 나타내려는 용도로 사용하는 속성이다.
+    </p>
+
+    <h3>width 와 height</h3>
+
+    <h4>고정 길이 : 화면 크기가 변해도 사진은 그대로</h4>
+
+    <!-- img[src="../resources/image/flower$.png" width="100px" height="100px"]*5 -->
+    <img src="../resources/image/flower1.png" alt="" width="100px" height="100px">
+    <img src="../resources/image/flower2.png" alt="" width="100px" height="100px">
+    <img src="../resources/image/flower3.png" alt="" width="100px" height="100px">
+    <img src="../resources/image/flower4.png" alt="" width="100px" height="100px">
+    <img src="../resources/image/flower5.png" alt="" width="100px" height="100px">
+
+    <h4>가변 길이 : 화면 크기에 따라 사진도 크기가 변하는 설정</h4>
+    <img src="../resources/image/flower1.png" alt="" width="15%" height="100px">
+    <img src="../resources/image/flower2.png" alt="" width="15%" height="100px">
+    <img src="../resources/image/flower3.png" alt="" width="15%" height="100px">
+    <img src="../resources/image/flower4.png" alt="" width="15%" height="100px">
+    <img src="../resources/image/flower5.png" alt="" width="15%" height="100px">
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+</body>
+</html>

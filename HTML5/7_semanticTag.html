@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>시맨틱 태그</title>
+    <style>
+        body{ width:500px;}
+        header, section, article, aside, footer{display:block; width:495px; margin:4px; padding:4px; background: lightblue; text-align:center;}
+        section{float:left; width:340px; height:400px;}
+        article{width:300px; background:wheat;}
+        aside{float:left; width:125px; height:400px;}
+        footer{overflow:hidden;}
+    </style>
+</head>
+<body>
+    <h1>시맨틱 태그</h1>
+    <!-- 시맨틱 태그의 용도는 body안에 코드 작성 시,
+         각 구조를 잡아서 코드를 작성하자는 의미이다.
+         즉, header, footer와 같이 화면에서 꾸며줄 영역을
+         규칙처럼 지정하여 구조를 잡고 코드를 작성하여 
+         보기 좋게 하자는 취지.
+         요약하자면, 영역 태그의 구조화라고 할 수 있다.
+    -->
+    <header>
+        <!-- 웹 문서의 머릿글 부분 -->
+        <h1>홍길동's Homepage!</h1>
+
+        <nav>
+            <!-- 웹 문서의 메뉴 영역 -->
+            <!-- ul>li*3 -->
+            <ul>
+                <li>
+                    <a href="0_index.html">Home</a>
+                </li>
+                <li>
+                    공지사항
+                </li>
+                <li>
+                    게시판
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <!-- 웹 문서의 주요 주제 관련 내용 -->
+
+        <article>
+            <!-- 주제 관련 세부 내용 -->
+            첫번째 주제!
+        </article>
+
+        <article>두번째 주제입니다!</article>
+
+        <article>
+            <p>
+                세번째 주제 입니다!
+            </p>
+        </article>
+
+    </section>
+
+    <aside>
+        <!-- 주제와 관련이 적거나 상대적으로 덜 중요한 내용 -->
+        <p>
+            머리가 자주 빠지신다구요?<br>
+            항상 아침에 거울 보기 두려우시다구요?<br>
+            그런 분들을 위해 준비했습니다!<br>
+            한 줌조차 미련없이, 깔끔함과 시원함을 한 번에!<br>
+            이발 가위, 올커트를 만나 보세요!
+        </p>
+    </aside>
+
+    <footer>
+        <!-- 해당 웹 문서의 저자, 저작권 정보 등을 명시하는 바닥글 내용을 작성하는 영역 -->
+        Copyright by 352 Class, All right reserved. <br>
+        본 문서는 352반 수업 페이지 입니다.
+    </footer>
+</body>
+</html>

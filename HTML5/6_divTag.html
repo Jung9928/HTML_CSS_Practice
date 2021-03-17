@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>영역 관련 태그</title>
+    <style>
+        .first {
+            border: 1px solid black;    
+            background : lightgreen;
+            width : 100px;
+            height : 100px;
+        }
+        .second {
+            border: 1px solid black;    
+            background : pink;
+            width : 100px;
+            height : 100px;
+        }
+        .third {
+            border: 1px solid black;    
+            background : skyblue;
+            width : 100px;
+            height : 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>영역 관련 태그</h1>
+    <p> p태그, pre태그, div태그, span태그</p>
+
+    <h3>div 태그</h3>
+    <p>block 속성 태그 : 하나의 태그가 해당 줄을 모두 차지하는 형태</p>
+
+    <!-- 영역을 별도로 하나의 내용으로 분리시킬 때 사용. 
+        분리된 영역은 해당 div태그만의 내용으로 채워진다.
+        이 div 태그를 "block 속성 태그라고 한다."
+        block 속성 태그 : 하나의 태그가 해당 줄을 모두 차지하는 형태
+    -->
+    <!-- div{$번째 영역}*3 -->
+    <div class="first">1번째 영역</div>
+    <div class="second">2번째 영역</div>
+    <div class="third">3번째 영역</div>
+
+    <h3>span 태그</h3>
+    <p>inline 속성 태그 : 한 줄에 가능한 만큼 서로 붙어서 나오는 형태.</p>
+    <!-- span[class="first"]{$번째 영역}*3 -->
+    <!-- span태그는 인라인 속성 태그라고 할 수 있다.-->
+    <span class="first">1번째 영역</span>
+    <span class="second">2번째 영역</span>
+    <span class="third">3번째 영역</span>
+
+    <hr>
+
+    <h3>div와 span 태그 범위 확인하기</h3>
+    <!-- Lorem ipsum : 아무 의미 없다는 뜻으로 아무 의미 없는 문단을 생성하여 사용하고 싶을 때 구글에 검색하면 나온다. -->
+    <p>Lorem ipsum : </p>
+
+    <h4>div 태그 범위</h4>
+
+    <div style="background : hotpink;">
+        누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 
+        체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 
+        대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다.
+    </div>
+
+    <br>
+
+    <h4>span 태그 범위</h4>
+
+    <span style="background: skyblue;">
+        누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 
+        체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 
+        대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다.
+    </span>
+
+    <br>
+
+    <h4>p 태그 범위</h4>
+    <p style="background: gold;">
+        누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 
+        체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 
+        대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다.
+    </p>
+
+    <!-- 
+        영역 관련 태그
+        <p> : 각 문단의 영역을 지정하는 태그 (block 속성 태그)
+        <pre> : 소스코드로 입력한 내용 그대로 보여주는 태그 (block 태그)
+        <div> : 줄바꿈을 적용하여 이미 존재하는 태그 다음 줄에 내용을 표현하는 태그 (block 태그)
+        <span> : 줄 바꿈을 적용하지 않아 이전 요소(태그) 옆에 착 붙어 내용을 표현하는 영역 태그 (inline 태그)
+     -->
+
+     <hr>
+
+     <h3>iframe 태그 사용하기</h3>
+     
+     <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/kjtANil7YOA" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <br><br><br>
+
+    <a href="0_index.html">처음으로 돌아가기 ...</a>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+</body>
+</html>
