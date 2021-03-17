@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 수업 내용</title>
+    <style>
+        /* 선택자들 간의 우선순위가 있으며 그 순서는 범위가 작은 것 -> 큰 것 순으로 먼저 적용된다. */
+        /* CSS 주석 */
+        /* 아이디 선택자 */
+        #two {color : red;}
+
+        /* 클래스 선택자 */
+        .group1 {color : blue;}
+        .group2 {background : lightpink;}
+
+        /* 태그이름 선택자 : 먼저 실행된 태그들의 선택자가 있는 경우, 적용되지 않는다.*/
+        li {
+            background: yellow;
+        }
+
+        /* 모든 태그 선택자 : */
+        * {
+            color : brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 선택자 1</h1>
+    <p>
+        CSS 선택자는 특정 HTML 태그를 선택하여 스타일을 지정하는
+        문법으로써, 인라인 > 아이디 > 클래스 > 태그명 > 전체 순으로 우선순위를 가진다.
+    </p>
+
+    <!-- ol>li{$번 li입니다.}*5 -->
+    <!-- inline 스타일 : 원하는 태그 안에 직접 스타일을 지정하는 것 -->
+    <ol>
+        <li style="color: red;">1번 li입니다.</li>
+        <li id="two">2번 li입니다.</li> <!-- 아이디 선택자 -->
+        <li class = "group1">3번 li입니다.</li>
+        <li class = "group1">4번 li입니다.</li>
+        <li class = "group2">5번 li입니다.</li>
+    </ol>
+
+    <span class="group2"> 나는 li가 아닙니다. </span>
+
+    <br>
+
+    <h4>다른 li 그룹</h4>
+
+    <!-- ul>li{ 다른 li - $ }*5 -->
+    <ui>
+        <li>다른 li - 1</li>
+        <li>다른 li - 2</li>
+        <li>다른 li - 3</li>
+        <li>다른 li - 4</li>
+        <li>다른 li - 5</li>
+    </ui>
+
+    <br><br><br>
+
+    <a href="9_index.html">처음으로 돌아가기...</a>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+</body>
+</html>
